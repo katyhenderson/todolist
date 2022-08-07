@@ -1,0 +1,423 @@
+@charset "UTF-8";
+/* Responsive CSS Document */
+
+/* ====================================================================================
+Responsive Layout Media Queries CSS
+(can also be min-device-width or max-device-width for devices changes only)
+======================================================================================= */
+
+
+/* Working out percentages
+(Item width x 100) / Container width (e.g. 940) = %
+*/
+
+/* DEVICES SIZES
+
+iPhone 4,4s
+320 x 480 P
+480 x 320 L
+
+iPhone 5,5s
+320 x 568 P
+568 x 320 L
+
+iPad
+768 x 1024 P
+1024 x 768 L
+
+*/
+
+
+/* Large Desktop - Design Width = 1300px
+======================================================== */
+
+@media only screen and (min-width: 1300px) {
+
+	/* Styles */
+
+}
+
+/* MacBook Screen - Design Width = 1280px
+======================================================== */
+
+@media only screen and (min-width: 1025px) and (max-width: 1299px) {
+
+	/* Styles */
+
+	.canvas{
+		width: 40%;
+		margin: 10px 15px;
+	}
+
+}
+
+
+/* iPad/Tablet (both) - Design Width = 768px
+======================================================== */
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+	/* Styles */
+	.logo {
+		height: 40px;
+	}
+
+	.canvas{
+		width: 40%;
+		margin: 10px 15px;
+	}
+
+	.button{
+		width: 20px;
+		height: 20px;
+	}
+
+	.buttons{
+		padding: 0 45px 0 0;
+	}
+
+	h1 {
+		font-size: 5em;
+	}
+
+
+	/* Visible */
+	.visible_desktop_tablet { display: block !important; }
+	.visible_desktop { display: none !important; }
+	.visible_tablet { display: block !important; }
+	.visible_phone { display: none !important; }
+	.visible_tablet_phone { display: block !important; }
+	/* Hidden */
+	.hidden_desktop_tablet { display: none !important; }
+	.hidden_desktop { display: block !important; }
+	.hidden_tablet { display: none !important; }
+	.hidden_phone { display: block !important; }
+	.hidden_tablet_phone { display: block !important; }
+
+}
+
+
+/* iPad/Tablet (DEVICE ONLY BOTH) - Design Width = 768px
+======================================================== */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+	/* Styles */
+
+}
+
+
+/* iPad/Tablet (Landscape) - Design Width = 1024px
+======================================================== */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+	/* Styles */
+
+	/* Visible */
+	.visible_desktop_tablet { display: block !important; }
+	.visible_desktop { display: none !important; }
+	.visible_tablet { display: block !important; }
+	.visible_tablet_land { display: block !important; }
+	.visible_phone { display: none !important; }
+	.visible_tablet_phone { display: block !important; }
+	/* Hidden */
+	.hidden_desktop_tablet { display: none !important; }
+	.hidden_desktop { display: block !important; }
+	.hidden_tablet { display: none !important; }
+	.hidden_phone { display: block !important; }
+	.hidden_tablet_phone { display: none !important; }
+
+}
+
+
+/* iPad/Tablet (DEVICE ONLY LANDSCAPE) - Design Width = 768px
+======================================================== */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+
+	/* Styles */
+
+}
+
+
+/* iPad/Tablet (Portrait) - Design Width = 768px
+======================================================== */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+
+	/* Styles */
+
+
+	/* Visible */
+	.visible_desktop_tablet { display: block !important; }
+	.visible_desktop { display: none !important; }
+	.visible_tablet { display: block !important; }
+	.visible_tablet_port { display: block !important; }
+	.visible_phone { display: none !important; }
+	.visible_tablet_phone { display: block !important; }
+	/* Hidden */
+	.hidden_desktop_tablet { display: none !important; }
+	.hidden_desktop { display: block !important; }
+	.hidden_tablet { display: none !important; }
+	.hidden_phone { display: block !important; }
+	.hidden_tablet_phone { display: none !important; }
+	
+}
+
+
+/* iPad/Tablet (DEVICE ONLY PORTRAIT) - Design Width = 768px
+======================================================== */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+
+	/* Styles */
+
+
+
+}
+
+/* iPhone/Mobile (Landscape) - Design Width = 480px
+======================================================== */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+	/* Styles */
+
+	.logo {
+		height: 35px;
+		margin: 17px 0 10px 20px;
+	}
+
+	.canvas{
+		width: 50%;
+		margin: 10px 20px;
+	}
+
+	.button{
+		width: 15px;
+		height: 15px;
+  		margin: 5px 5px;
+	}
+
+	.buttons{
+		padding: 0 45px 0 0;
+	}
+
+	h1 {
+		font-size: 4em;
+		padding: 0 0 30px 0;
+	}
+
+	h3{
+		font-size: 1.4em;
+		padding: 0;
+	}
+
+	table{
+		width: 90%;
+	}
+
+	table th{
+		font-size: 2.2em;
+		line-height: 1.4em;
+		letter-spacing: 0px;
+		padding: 10px 15px;
+	}
+
+	table td{
+		font-size: 1.6em;
+		line-height: 2.6em;
+		font-weight: 400;
+		letter-spacing: 0px;
+		margin: 0;
+		padding: 10px 5px;
+	}
+
+	/* Visible */
+	.visible_desktop_tablet { display: none !important; }
+	.visible_desktop { display: none !important; }
+	.visible_tablet { display: none !important; }
+	.visible_phone { display: block !important; }
+	.visible_phone_land { display: block !important; }
+	.visible_tablet_phone { display: block !important; }
+	/* Hidden */
+	.hidden_desktop_tablet { display: block !important; }
+	.hidden_desktop { display: block !important; }
+	.hidden_tablet { display: block !important; }
+	.hidden_phone { display: none !important; }
+	.hidden_tablet_phone { display: none !important; }
+
+}
+
+
+/* iPhone/Mobile (Portrait) - Design Width = 320px
+======================================================== */
+
+@media only screen and (min-width: 321px) and (max-width: 479px) {
+
+	/* Styles */
+
+	.row.fullColorSwitch{
+		display: none;
+	}
+
+	.logo {
+		height: 30px;
+		width: auto;
+		margin: 10px 0 10px 10px;
+		padding: 5px 10px;
+	}
+
+	.mobileColorSwitch .canvas{
+		width: 90%;
+		margin: 0 auto;
+		float: none;
+	}
+
+	.mobileColorSwitch .button{
+		width: 18px;
+		height: 18px;
+  		margin: 7px;
+	}
+
+	.mobileColorSwitch .buttons{
+		padding: 0;
+		width: 41%;
+		margin: 0 auto;
+		float: none;
+	}
+
+	h1 {
+		font-size: 4em;
+		padding: 10px 0 30px 0;
+	}
+
+	.mobileColorSwitch h3{
+		font-size: 1.4em;
+		padding: 0;
+		text-align: center;
+	}
+
+	.row.mobileColorSwitch {
+		display: inline-block;
+	}
+
+	table{
+		width: 90%;
+	}
+	
+	table th{
+		font-size: 2em;
+		line-height: 1em;
+		letter-spacing: 0px;
+		padding: 10px 15px;
+	}
+
+	table td{
+		font-size: 1.4em;
+		line-height: 2em;
+		font-weight: 400;
+		letter-spacing: 0px;
+		margin: 0;
+		padding: 10px 5px;
+	}
+
+
+	/* Visible */
+	.visible_desktop_tablet { display: none !important; }
+	.visible_desktop { display: none !important; }
+	.visible_tablet { display: none !important; }
+	.visible_phone { display: block !important; }
+	.visible_phone_port { display: block !important; }
+	.visible_tablet_phone { display: block !important; }
+	/* Hidden */
+	.hidden_desktop_tablet { display: block !important; }
+	.hidden_desktop { display: block !important; }
+	.hidden_tablet { display: block !important; }
+	.hidden_phone { display: none !important; }
+	.hidden_tablet_phone { display: none !important; }
+
+}
+
+
+/* iPhone 5 (both) - Design Width = 480px
+======================================================== */
+
+@media only screen and (min-width: 300px) and (max-width: 320px) {
+
+	/* Styles */
+
+	.row.fullColorSwitch{
+		display: none;
+	}
+
+	.logo {
+		height: 25px;
+		width: auto;
+		margin: 10px 0 10px 10px;
+		padding: 5px 10px;
+	}
+
+	.mobileColorSwitch .canvas{
+		width: 90%;
+		margin: 0 auto;
+		float: none;
+	}
+
+	.mobileColorSwitch .button{
+		width: 18px;
+		height: 18px;
+  		margin: 7px;
+	}
+
+	.mobileColorSwitch .buttons{
+		padding: 0;
+		width: 50%;
+		margin: 0 auto;
+		float: none;
+	}
+
+	h1 {
+		font-size: 3.5em;
+		padding: 10px 0 30px 0;
+	}
+
+	.mobileColorSwitch h3{
+		font-size: 1.4em;
+		padding: 0;
+		text-align: center;
+	}
+
+	.row.mobileColorSwitch {
+		display: inline-block;
+	}
+
+	table th{
+		font-size: 2em;
+		line-height: 1em;
+		letter-spacing: 0px;
+		padding: 10px 15px;
+	}
+
+	table td{
+		font-size: 1.4em;
+		line-height: 1.6em;
+		font-weight: 400;
+		letter-spacing: 0px;
+		margin: 0;
+		padding: 10px 5px;
+	}
+
+}
+
+/* Old Mobile Phones
+======================================================== */
+
+@media screen and (min-width: 240px) and (max-width: 319px) {
+
+	
+
+
+}
+

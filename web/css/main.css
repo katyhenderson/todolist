@@ -1,0 +1,356 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cambay&display=swap');
+@import url("https://use.typekit.net/mrz5wxv.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;1,100;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+
+/* FONT CHART
+=================================================================================== */
+/*
+
+08px = 0.8em
+09px = 0.9em
+10px = 1.0em
+11px = 1.1em
+12px = 1.2em
+14px = 1.4em
+16px = 1.6em
+18px = 1.8em
+25px = 2.0em
+22px = 2.2em
+24px = 2.4em
+and so on...
+
+*/
+
+/* OVERALL DOCUMENT STYLES
+=================================================================================== */
+
+html, body {
+  background: #ffffff;
+  min-width: 100%;
+  min-height: 1000px;
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow:auto
+
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px; /* See Font Chart Above */
+  color: #ffffff;
+  line-height: 1.3em;
+  -webkit-overflow-scrolling: touch;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -ms-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+/* LAYOUT STYLES
+=================================================================================== */
+
+.row {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  float: left;
+  clear: both;
+  /*overflow: hidden;*/
+  z-index: 1;
+  height:100%;
+  min-height:100%;/*for mozilla*/
+
+}
+
+.contents {
+  width: 85%;
+  max-width: 1000px;
+  height: auto;
+  position: relative;
+  margin: 0 auto;
+  padding: 0px 0px 0px 0px;
+  /*overflow: hidden;*/
+  clear: both;
+  z-index: 1;
+  display: block;
+}
+
+  /* TYPOGRAPHY
+=================================================================================== */
+
+  h1, h2, h3, h4, h5, h6, p {
+    text-rendering: optimizelegibility;
+    clear: both;
+    color: #E9E6E1;
+  }
+
+ /* HEADER
+=================================================================================== */
+.row.back{
+  clear: none;
+  width: 20%;
+  display: inline-block;
+}
+
+.logo {
+  height: 50px;
+  float: left;
+  margin: 25px 0 10px 20px;
+  padding: 5px 10px;
+  background-color: #073A3D;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 6em;
+  line-height: 1.2em;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: 5px;
+  margin: 0;
+  padding: 0 0 50px 0;
+  color: #000000;
+
+}
+
+/* FORM
+=================================================================================== */
+form{
+  text-align: center;
+  margin: 0;
+  padding: 30px 0 20px 0;
+}
+
+.form_container{
+  margin: 0 auto 50px auto;
+  background: #ffffff;
+  padding: 20px;
+  text-align: center;
+  border: 1px transparent;
+  border-radius: 50px;
+  width: 90%;
+  -webkit-box-shadow: 0px 0px 59px -5px rgba(87,83,87,1);
+  -moz-box-shadow: 0px 0px 59px -5px rgba(87,83,87,1);
+  box-shadow: 0px 0px 59px -5px rgba(87,83,87,1);
+}
+
+form input{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.6em;
+  width: 70%;
+  line-height: 1.2em;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 3px;
+  margin: 0 0 20px 0;
+  padding: 10px;
+  color: #474F62;
+  border: 1px solid #aaa5a5;
+  border-radius: 5px;
+}
+
+input::placeholder {
+  font-size: 1em;
+  font-style: italic;
+}
+
+
+button {
+  font-size: 1.8em;
+  margin: 0 0 0 10px;
+  padding: 5px;
+  background: transparent;
+  border: none;
+  color: #aaa5a5;
+}
+
+.delete_btn{
+  color: #aaa5a5;
+  margin: 0 0 0 50px;
+
+}
+
+table{
+  margin: 0 auto;
+  width: 70%;
+  border-collapse: collapse;
+}
+
+table th{
+  font-family: 'Raleway', sans-serif;
+  font-size: 2em;
+  line-height: 1.2em;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 10px;
+  color: #000000;
+}
+
+table td{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.8em;
+  line-height: 2em;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 5px;
+  color: #073A3D;
+  border-bottom: 1px solid #000000;
+}
+
+/* CUSTOM CHECKBOX
+=================================================================================== */
+
+
+/* Customize the label (the container) */
+.container {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  height: 25px;
+  width: 25px;
+  border: 1px transparent;
+  border-radius: 3px;
+  background-color: #bbb6b6;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: black;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* COLOUR THEME SWITCHER
+=================================================================================== */
+
+.canvas{
+  margin: 10px 50px;
+  width: 20%;
+  float: right;
+}
+
+h3{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.8em;
+  line-height: 2em;
+  text-align: right;
+  font-weight: 400;
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 5px;
+  color: #000000;
+}
+
+.buttons{
+  float: right;
+  padding: 0 20px 0 0;
+}
+
+.button{
+  float: left;
+  display: inline-block;
+  margin: 5px 10px;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #5f5f5f;
+  border-radius: 5px;
+}
+
+.grey{
+  background: #989696;
+}
+
+.white{
+  background: #ffffff;
+}
+
+.blue{
+  background: #c8dcea;
+}
+
+.pink{
+  background: #eac8c8;
+}
+
+.row.mobileColorSwitch{
+  display: none;
+}
+
+.row.fullColorSwitch{
+  clear: none;
+  width: 80%;
+  display: inline-block;
+  float: right;
+}
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>To Do List</title>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/0d2868edd9.js" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="web/css/main.css">
+<link rel="stylesheet" href="web/css/responsive.css">
+
+</head>
+<body id="body" onload="dispObj()">
+
+	<div class="row back">
+      	<a href="/"><img class="logo" src="/web/img/logo.png" alt="logo"></a>
+	</div>
+
+	<div class="row fullColorSwitch">
+      	<!-- <a href="/"><img class="logo" src="/web/img/logo.png" alt="logo"></a> -->
+			<div class="canvas">
+			    <h3>Color Scheme Switcher</h3>
+			    <div class="buttons">
+				    <span class="button grey" onclick="buttonClick('grey')" id="grey"></span>
+				    <span class="button white" onclick="buttonClick('white')" id="white"></span>
+				    <span class="button blue" onclick="buttonClick('blue')" id="blue"></span>
+				    <span class="button pink" onclick="buttonClick('pink')" id="pink"></span>
+				</div>
+		    </div>
+	</div>
+
+	<div class="row header">
+		<div class="contents">
+			<h1>To Do List</h1>
+		</div>
+	</div>
+
+	<div class="contents">
+		<div class="form_container">
+			<form onsubmit="return addTask()" name="myForm">
+				<input id="timeTask" type="text" name="task" placeholder="Add an item...">
+				<button type="submit" ><i class="fas fa-plus"></i></button>
+			</form>
+
+			<table id="toDoList">
+				<tr>
+					<th>Added</th>
+					<th>Task</th>
+					<th>Done?</th>
+				</tr>
+			</table>
+		</div>
+	</div>
+	
+	<div class="row mobileColorSwitch">
+		<div class="canvas">
+		    <h3>Color Scheme Switcher</h3>
+		    <div class="buttons">
+			    <span class="button grey" onclick="buttonClick('grey')" id="grey"></span>
+			    <span class="button white" onclick="buttonClick('white')" id="white"></span>
+			    <span class="button blue" onclick="buttonClick('blue')" id="blue"></span>
+			    <span class="button pink" onclick="buttonClick('pink')" id="pink"></span>
+			</div>
+	    </div>
+	</div>
+
+  <script src="web/js/script.js"></script>
+
+</body>
+</html>
